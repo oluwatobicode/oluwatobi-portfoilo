@@ -6,25 +6,25 @@ const socials = [
     name: "Email",
     icon: Mail,
     link: "mailto:odetokuntreasure6@gmail.com",
-    color: "bg-blue-500/20 hover:bg-blue-500/30",
+    color: "backdrop-blur-xl bg-white/70 dark:bg-gray-900/70",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
     link: "https://www.linkedin.com/in/treasure-odetokun-107a21231/",
-    color: "bg-cyan-500/20 hover:bg-cyan-500/30",
+    color: "backdrop-blur-xl bg-white/70 dark:bg-gray-900/70",
   },
   {
     name: "GitHub",
     icon: Github,
     link: "https://github.com/oluwatobicode/",
-    color: "bg-purple-500/20 hover:bg-purple-500/30",
+    color: "backdrop-blur-xl bg-white/70 dark:bg-gray-900/70",
   },
   {
     name: "Twitter",
     icon: Twitter,
     link: "https://x.com/Oluwatobicodes",
-    color: "bg-pink-500/20 hover:bg-pink-500/30",
+    color: "backdrop-blur-xl bg-white/70 dark:bg-gray-900/70",
   },
 ];
 
