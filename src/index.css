@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-headings: "Space Grotesk", sans-serif;
+  --font-family-paragraph: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
