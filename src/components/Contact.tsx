@@ -30,7 +30,7 @@ const socials = [
 
 const Contact = () => {
   return (
-    <section className="px-5 py-20">
+    <section className="px-5 py-20" id="contact">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center text-center">
           <motion.h1

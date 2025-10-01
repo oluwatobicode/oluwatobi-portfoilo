@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="min-h-screen px-8 py-4 flex items-center justify-center">
+    <div
+      className="min-h-screen px-8 py-4 flex items-center justify-center"
+      id="about"
+    >
       <div className="mx-auto max-w-6xl w-full">
         <div className="flex lg:flex-row flex-col-reverse items-center justify-center gap-[10px] lg:gap-[91px]">
           <motion.div
