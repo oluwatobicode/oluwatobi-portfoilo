@@ -5,6 +5,8 @@
   --font-family-paragraph: "Poppins", sans-serif;
 }
 
+@custom-variant hover (&:hover);
+
 body {
   background-color: black;
 }
