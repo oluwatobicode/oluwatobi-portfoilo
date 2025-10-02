@@ -37,7 +37,8 @@ const About = () => {
               functional teams- teams consisting of designers, engineers and
               product managers. I also thrive in a fast-paced, mentally
               stimulating enviroments. If I'm not coding, I will probably be
-              binge-watching anime or trying to beat a final boss in a game.
+              binge-watching anime or just playing games. You could also call me
+              Coding Ninja.
             </motion.p>
           </motion.div>
 
@@ -58,9 +59,9 @@ const About = () => {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              src="/circular-coding-ninja-icon.svg"
+              src="/oluwatobi.jpg"
               alt="Coding-ninja-icon"
-              className="absolute w-[250px] h-[250px] lg:w-[330px] lg:h-[330px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              className="absolute w-[250px] h-[250px] lg:w-[330px] lg:h-[330px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
             />
           </motion.div>
         </div>

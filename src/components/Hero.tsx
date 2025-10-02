@@ -5,13 +5,21 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col text-center items-center justify-center space-y-4">
+          <motion.img
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            src="/circular-coding-ninja-icon.svg"
+            className="w-[80px]"
+            alt=""
+          />
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="font-family-headings lg:text-[80px] text-[20px] text-white"
           >
-            Hi, I am Treasure 🥷🏾
+            Hi, I am Treasure
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -19,9 +27,10 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="font-family-paragraph  text-white lg:text-[24px] text-[14px]  lg:leading-[39px]"
           >
-            I am a front-end engineer who builds functional and efficient web
-            applications using React, Next.js, and TypeScript, focusing on clean
-            code and practical solutions.
+            You could also call me Coding Ninja, I am a Front-end engineer who
+            builds functional and efficient web applications using React,
+            Next.js, and TypeScript, focusing on clean code and practical
+            solutions.
           </motion.p>
 
           <motion.button

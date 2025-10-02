@@ -105,6 +105,14 @@ const Projects = () => {
                 {el.desc}
               </p>
 
+              <div className="flex flex-row items-center gap-[20px] mt-auto">
+                {el.tools.map((el, i) => (
+                  <div key={i}>
+                    <img className="w-[30px]" src={el.name} alt="" />
+                  </div>
+                ))}
+              </div>
+
               <div className="flex flex-row gap-[20px] mt-auto">
                 <motion.a
                   href={el.link}
