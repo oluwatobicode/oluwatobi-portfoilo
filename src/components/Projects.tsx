@@ -3,6 +3,19 @@ import { motion } from "framer-motion";
 
 const myProjects = [
   {
+    pic: "/nacos-website.png",
+    name: "BOWEN NACOS",
+    desc: "Spearheaded the front-end development and documentation for Bowen NACOS Website at Bowen University using React.js, Context API, and Tailwind CSS, streamlining resource sharing access for 1,000+ students and boosting engagement by 20%.",
+    tools: [
+      { name: "/React-icon.svg" },
+      { name: "/ts-logo.png" },
+      { name: "/Tailwind-CSS.svg" },
+      { name: "/Vite_icon.svg" },
+    ],
+    link: "https://nacosbowen.org.ng/",
+    isPersonal: false,
+  },
+  {
     pic: "/Connect-four-game.svg",
     name: "Connect Four Game",
     desc: "A strategy-based Connect Four game built with React and TypeScript, featuring an AI opponent powered by the Minimax algorithm with alpha-beta pruning for optimized gameplay decisions.",
@@ -14,6 +27,7 @@ const myProjects = [
     ],
     link: "https://connect-four-gane.vercel.app/",
     github: "https://github.com/oluwatobicode/connect-four-gane",
+    isPersonal: true,
   },
   {
     pic: "/Hangman-game.svg",
@@ -28,6 +42,7 @@ const myProjects = [
     ],
     link: "https://hangman-game-eight-steel.vercel.app/",
     github: "https://github.com/oluwatobicode/hangman_game",
+    isPersonal: true,
   },
   {
     pic: "/ark-pay.svg",
@@ -40,6 +55,7 @@ const myProjects = [
     ],
     link: "https://ark-pay.vercel.app/",
     github: "https://github.com/oluwatobicode/ark-pay",
+    isPersonal: true,
   },
   {
     pic: "/apollo-chatbot.svg",
@@ -54,6 +70,7 @@ const myProjects = [
     ],
     link: "https://apollo-chat-bot-brown.vercel.app/",
     github: "https://github.com/oluwatobicode/apollo-chatBot",
+    isPersonal: true,
   },
 ];
 
@@ -130,17 +147,20 @@ const Projects = () => {
                     <MoveUpRight size={20} />
                   </motion.div>
                 </motion.a>
-                <motion.a
-                  href={el.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex items-center justify-center gap-[10px] border cursor-pointer border-white w-[130px] h-[50px] rounded-[18px] font-family-paragraph hover:bg-white hover:text-black transition-colors"
-                >
-                  Github
-                  <Github size={20} />
-                </motion.a>
+
+                {el.isPersonal && (
+                  <motion.a
+                    href={el.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex items-center justify-center gap-[10px] border cursor-pointer border-white w-[130px] h-[50px] rounded-[18px] font-family-paragraph hover:bg-white hover:text-black transition-colors"
+                  >
+                    Github
+                    <Github size={20} />
+                  </motion.a>
+                )}
               </div>
             </motion.div>
           ))}
