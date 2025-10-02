@@ -27,10 +27,10 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="font-family-paragraph  text-white lg:text-[24px] text-[14px]  lg:leading-[39px]"
           >
-            You could also call me Coding Ninja, I am a Front-end engineer who
-            builds functional and efficient web applications using React,
-            Next.js, and TypeScript, focusing on clean code and practical
-            solutions.
+            You could also call me Coding Ninja, I am a Full-stack Software
+            Engineer that is primarily a Front-end Engineer who builds
+            functional and efficient web applications using React, Next.js, and
+            TypeScript, focusing on clean code and practical solutions.
           </motion.p>
 
           <motion.button
