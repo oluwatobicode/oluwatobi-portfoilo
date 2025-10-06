@@ -22,7 +22,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-white tracking-wide mb-3 font-family-headings text-[14px] lg:text-[26px]"
             >
-              ODETOKUN TREASURE OLUWATOBI 👋🏽
+              TREASURE ODETOKUN OLUWATOBI 👋🏽
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
