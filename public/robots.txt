@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oluwatobii.vercel.app/sitemap.xml
+Sitemap: https://oluwatobii.xyz/sitemap.xml

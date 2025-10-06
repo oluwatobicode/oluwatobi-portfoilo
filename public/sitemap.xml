@@ -3,28 +3,28 @@
 
   <!-- Home -->
   <url>
-    <loc>https://oluwatobii.vercel.app/</loc>
+    <loc>https://oluwatobii.xyz/</loc>
     <lastmod>2025-10-02</lastmod>
     <priority>0.9</priority>
   </url>
 
   <!-- About -->
   <url>
-    <loc>https://oluwatobii.vercel.app/#about</loc>
+    <loc>https://oluwatobii.xyz/#about</loc>
     <lastmod>2025-10-02</lastmod>
     <priority>0.7</priority>
   </url>
 
   <!-- Projects (highest priority) -->
   <url>
-    <loc>https://oluwatobii.vercel.app/#projects</loc>
+    <loc>https://oluwatobii.xyz/#projects</loc>
     <lastmod>2025-10-02</lastmod>
     <priority>1.0</priority>
   </url>
 
   <!-- Contact -->
   <url>
-    <loc>https://oluwatobii.vercel.app/#contact</loc>
+    <loc>https://oluwatobii.xyz/#contact</loc>
     <lastmod>2025-10-02</lastmod>
     <priority>0.6</priority>
   </url>
