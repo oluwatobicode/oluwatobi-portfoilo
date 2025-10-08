@@ -19,6 +19,18 @@ const allSkills = [
     skill: "/next-js.svg",
   },
   {
+    name: "Express Js",
+    skill: "/Express.png",
+  },
+  {
+    name: "Node Js",
+    skill: "/Node.js.svg",
+  },
+  {
+    name: "MongoDB",
+    skill: "/MongoDB.svg",
+  },
+  {
     name: "React Query",
     skill: "/React-Query-Icon.svg",
   },
