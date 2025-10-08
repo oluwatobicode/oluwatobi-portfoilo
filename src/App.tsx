@@ -6,11 +6,13 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
+import MouseFollower from "./components/MouseFollower";
 
 function App() {
   return (
-    <>
+    <div className="relative">
       <Analytics />
+      <MouseFollower />
       <Navbar />
       <Hero />
       <About />
@@ -18,7 +20,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
