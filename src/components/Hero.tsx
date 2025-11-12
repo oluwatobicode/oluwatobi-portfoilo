@@ -41,7 +41,7 @@ const Hero = () => {
             className="w-[150px] bg-white  h-[50px] rounded-[15px] cursor-pointer "
           >
             <a
-              href="https://drive.google.com/file/d/1ipxcabwSbVYCZgo9pgEmL4oyMb5eXbfZ/view?usp=sharing"
+              href="https://docs.google.com/document/d/1a1XMWmV5y6RQvAGtWcII-ZxBuon41mlhRyEXQj0Tcis/edit?usp=sharing"
               target="blank"
               className="text-black font-family-headings font-medium text-[20px]"
             >
