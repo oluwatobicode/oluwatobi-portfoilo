@@ -31,11 +31,14 @@ const myProjects = [
   },
   {
     pic: "/Hangman-game.svg",
-    name: "Hangman Game",
-    desc: "An engaging word-guessing game built with React and TypeScript. Players can explore multiple categories like movies, animals, sports, and more, with 8 chances to reveal the hidden word. Enhanced with smooth animations using Framer Motion for a fun and dynamic experience.",
+    name: "Online Hangman Game",
+    desc: "A modern AI-powered word-guessing game with a full backend and dynamic gameplay. Features multiple categories, AI-generated words, achievements, leaderboard, and customizable difficulty. Built with React and TypeScript, enriched with Framer Motion animations for a smooth, engaging player experience.",
     tools: [
       { name: "/React-icon.svg" },
       { name: "/ts-logo.png" },
+      { name: "/MongoDB.svg" },
+      { name: "/Express.png" },
+      { name: "/Node.js.svg" },
       { name: "/Tailwind-CSS.svg" },
       { name: "/Vite_icon.svg" },
       { name: "/framer-white.svg" },
