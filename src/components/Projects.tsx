@@ -3,6 +3,24 @@ import { motion } from "framer-motion";
 
 const myProjects = [
   {
+    pic: "/Hangman-game.svg",
+    name: "Online Hangman Game",
+    desc: "A modern AI-powered word-guessing game with a full backend and dynamic gameplay. Features multiple categories, AI-generated words through a CRON job, multiplayer mode, achievements, and a leaderboard. Built with React and TypeScript, enriched with Framer Motion animations for a smooth, engaging player experience.",
+    tools: [
+      { name: "/React-icon.svg" },
+      { name: "/ts-logo.png" },
+      { name: "/MongoDB.svg" },
+      { name: "/Express.png" },
+      { name: "/Node.js.svg" },
+      { name: "/Tailwind-CSS.svg" },
+      { name: "/Vite_icon.svg" },
+      { name: "/framer-white.svg" },
+    ],
+    link: "https://hangman-game-eight-steel.vercel.app/",
+    github: "https://github.com/oluwatobicode/hangman_game",
+    isPersonal: true,
+  },
+  {
     pic: "/nacos-website.png",
     name: "BOWEN NACOS",
     desc: "Spearheaded the front-end development and documentation for Bowen NACOS Website at Bowen University using React.js, Context API, and Tailwind CSS, streamlining resource sharing access for 1,000+ students and boosting engagement by 20%.",
@@ -29,24 +47,7 @@ const myProjects = [
     github: "https://github.com/oluwatobicode/connect-four-gane",
     isPersonal: true,
   },
-  {
-    pic: "/Hangman-game.svg",
-    name: "Online Hangman Game",
-    desc: "A modern AI-powered word-guessing game with a full backend and dynamic gameplay. Features multiple categories, AI-generated words, achievements, leaderboard, and customizable difficulty. Built with React and TypeScript, enriched with Framer Motion animations for a smooth, engaging player experience.",
-    tools: [
-      { name: "/React-icon.svg" },
-      { name: "/ts-logo.png" },
-      { name: "/MongoDB.svg" },
-      { name: "/Express.png" },
-      { name: "/Node.js.svg" },
-      { name: "/Tailwind-CSS.svg" },
-      { name: "/Vite_icon.svg" },
-      { name: "/framer-white.svg" },
-    ],
-    link: "https://hangman-game-eight-steel.vercel.app/",
-    github: "https://github.com/oluwatobicode/hangman_game",
-    isPersonal: true,
-  },
+
   {
     pic: "/ark-pay.svg",
     name: "ArkPay",
