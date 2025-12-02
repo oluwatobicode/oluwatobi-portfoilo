@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const myProjects = [
   {
-    pic: "/Hangman-game.svg",
-    name: "Online Hangman Game",
+    pic: "/hangman-game.png",
+    name: "Hangman — AI-Generated Words & Advanced Gameplay",
     desc: "A modern AI-powered word-guessing game with a full backend and dynamic gameplay. Features multiple categories, AI-generated words through a CRON job, multiplayer mode, achievements, and a leaderboard. Built with React and TypeScript, enriched with Framer Motion animations for a smooth, engaging player experience.",
     tools: [
       { name: "/React-icon.svg" },
