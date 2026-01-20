@@ -25,6 +25,7 @@ const myProjects: ProjectItem[] = [
       { name: "/ts-logo.png" },
       { name: "/Tailwind-CSS.svg" },
       { name: "/framer-white.svg" },
+      { name: "/Express.png" },
       { name: "/MongoDB.svg" },
       { name: "/Node.js.svg" },
     ],
