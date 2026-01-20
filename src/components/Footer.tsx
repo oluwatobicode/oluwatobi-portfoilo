@@ -1,9 +1,11 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="px-5 py-8 border-t border-white/50">
-      <div className="max-w-6xl mx-auto">
-        <p className="text-center text-white font-family-paragraph text-[0.875rem] lg:text-[1rem] font-light opacity-70">
-          Treasure Odetokun | Copyright © 2025
+    <footer className="px-5 py-8 border-t border-white/10 bg-[#0E0E0E]">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center">
+        <p className="text-white/50 font-family-paragraph text-sm font-light">
+          © {currentYear} Treasure Odetokun. All rights reserved.
         </p>
       </div>
     </footer>

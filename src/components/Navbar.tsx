@@ -1,78 +1,52 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  });
 
   return (
-    <>
-      <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[300px] md:w-[400px] md:max-w-[400px] animate-[slideDown_0.6s_ease-out]">
-        <div
-          className={`rounded-[2rem] shadow-lg border transition-all duration-500 p-5 ${
-            isScrolled
-              ? "backdrop-blur-xl bg-white/70 dark:bg-gray-900/70"
-              : "backdrop-blur-none bg-transparent"
-          }`}
-          style={{
-            borderColor: isScrolled ? "rgba(76, 49, 245, 0.2)" : "#4C31F500",
-          }}
-        >
-          <div className="px-6 flex items-center justify-center">
-            <div className="flex items-center space-x-8 font-family-paragraph">
-              <Link to="about" smooth={true}>
-                <a className="text-gray-700 cursor-pointer dark:text-gray-200 transition-all duration-300 font-medium hover:scale-110 animate-[fadeIn_0.8s_ease-out_0.1s_both]">
-                  About
-                </a>
-              </Link>
+    <motion.nav
+      initial={{ y: -100, opacity: 0, x: "-50%" }}
+      animate={{ y: 0, opacity: 1, x: "-50%" }}
+      transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+      className="fixed top-5 left-1/2 z-50 w-[90%] max-w-[400px]"
+    >
+      <div
+        className={`rounded-full px-6 py-4 flex items-center justify-center transition-all duration-500 border ${
+          isScrolled
+            ? "bg-white/10 backdrop-blur-md border-white/20 shadow-lg"
+            : "bg-transparent border-transparent"
+        }`}
+      >
+        <div className="flex items-center space-x-8 font-family-paragraph">
+          {["About", "Project", "Contact"].map((item, index) => (
+            <Link
+              key={index}
+              to={item.toLowerCase()}
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="relative cursor-pointer text-gray-300 hover:text-white transition-colors text-sm lg:text-base font-medium group"
+            >
+              {item}
 
-              <Link to="project" smooth={true}>
-                <a className="text-gray-700 cursor-pointer dark:text-gray-200 transition-all duration-300 font-medium hover:scale-110 animate-[fadeIn_0.8s_ease-out_0.2s_both]">
-                  Projects
-                </a>
-              </Link>
-
-              <Link to="contact" smooth={true}>
-                <a className="text-gray-700 cursor-pointer dark:text-gray-200 transition-all duration-300 font-medium hover:scale-110 animate-[fadeIn_0.8s_ease-out_0.3s_both]">
-                  Contact
-                </a>
-              </Link>
-            </div>
-          </div>
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+            </Link>
+          ))}
         </div>
-      </nav>
-
-      <style>{`
-        @keyframes slideDown {
-          from {
-            opacity: 0;
-            transform: translate(-50%, -20px);
-          }
-          to {
-            opacity: 1;
-            transform: translate(-50%, 0);
-          }
-        }
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
-    </>
+      </div>
+    </motion.nav>
   );
 };
 
