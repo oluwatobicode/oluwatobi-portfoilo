@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-5">
+    <section className="min-h-screen flex items-center justify-center px-5 md:px-10">
       <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col text-center items-center justify-center space-y-6">
+        <div className="flex flex-col text-center items-center justify-center gap-8 lg:gap-10">
           <motion.img
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -18,9 +18,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="font-family-headings font-bold text-white text-[40px] md:text-[60px] lg:text-[80px] leading-tight"
+            className="font-family-headings font-bold text-gray-400 text-[40px] md:text-[60px] lg:text-[80px] leading-[1.1] tracking-tight"
           >
-            Hi, I am <span className="text-gray-400">Treasure</span>
+            Hi, I am <span className="text-white">Treasure</span>
           </motion.h1>
 
           <motion.p
@@ -47,7 +47,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
             whileHover={{ scale: 1.05, backgroundColor: "#f3f4f6" }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center justify-center w-[160px] h-[55px] bg-white text-black font-family-headings font-medium text-[18px] lg:text-[20px] rounded-[15px] cursor-pointer shadow-lg hover:shadow-xl transition-shadow"
+            className="inline-flex items-center justify-center px-8 py-3 min-w-[160px] bg-white text-black font-family-headings font-medium text-[18px] lg:text-[20px] rounded-[15px] cursor-pointer shadow-lg hover:shadow-xl transition-shadow"
           >
             My Resume
           </motion.a>
